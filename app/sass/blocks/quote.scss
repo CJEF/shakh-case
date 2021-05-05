@@ -1,6 +1,7 @@
 .quote {
     padding: 50px 75px;
     background-color: $porcelain;
+    overflow-x: hidden;
     &__title {
         margin-bottom: 22px;
     }
@@ -37,7 +38,7 @@
         font-family: Montserrat;
         font-style: italic;
         font-weight: normal;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
         color: $black;
     }

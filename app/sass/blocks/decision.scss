@@ -1,7 +1,11 @@
 .decision {
     counter-reset: list;
     &__inner {
-        padding: $big-offset 15px;
+        padding: $big-offset 15px 30px;
+        position: relative;
+        &--2 {
+            padding: 37px 0 $big-offset;
+        }
     }
     &__title {
         margin-bottom: 25px;
@@ -62,5 +66,107 @@
             height: 48px;
             border-color: $blue;
         }
+        &--bg {
+            overflow-y: hidden;
+            background: #A0D5ED;
+            position: relative;
+            z-index: 5;
+            padding: 47px 0 77px;
+            img {
+                margin-top: 45px;
+            }
+            .container {
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 985px;
+                    height: 985px;
+                    border-radius: 100%;
+                    background-color: $porcelain;
+                    top: 50%;
+                    left: -88%;
+                    transform: translateY(-50%);
+                    z-index: -1;
+                }
+            }
+        }
     }
+}
+
+.decision-parallax {
+    &__left {
+        left: -25%;
+        top: 30%;
+
+    }
+    &__right {
+        right: -25%;
+        top: 30%;
+    }
+    &__item {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 172px;
+        line-height: 26px;
+        color: #F6F7F8;
+
+    }
+}
+
+.parallax-left__item {
+    text-transform: uppercase;
+    user-select: none;
+    position: absolute;
+        &:nth-child(1) {
+            left: -30%;
+            top: 3%;
+        }
+        &:nth-child(2) {
+            left: -20%;
+            top: 13%;
+        }
+        &:nth-child(3) {
+            left: -35%;
+            top: 22%;
+        }
+        &:nth-child(4) {
+            left: -28%;
+            top: 32%;
+        }
+        &:nth-child(5) {
+            left: -23%;
+            top: 43%;
+        }
+}
+
+.parallax-right__item {
+    text-transform: uppercase;
+    user-select: none;
+    position: absolute;
+        &:nth-child(1) {
+            right: -20%;
+            top: 18%;
+        }
+        &:nth-child(2) {
+            right: -29%;
+            top: 28%;
+        }
+        &:nth-child(3) {
+            right: -19%;
+            top: 37%;
+        }
+        &:nth-child(4) {
+            right: -33%;
+            top: 46%;
+        }
+        &:nth-child(5) {
+            right: -27%;
+            top: 56%;
+        }
+        &:nth-child(6) {
+            right: -16%;
+            top: 65%;
+        }
 }

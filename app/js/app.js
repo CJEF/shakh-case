@@ -1,3 +1,1 @@
-$(document).ready(function() {
-	// $('body').hide()
-})
+let rellax = new Rellax(".rellax");

@@ -9,6 +9,7 @@ html {
     box-sizing: inherit;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    color: $black;
 }
 
 a {
@@ -44,6 +45,7 @@ h6 {
 body {
     min-width: 320px;
     position: relative;
+    color: $black;
 }
 
 strong {
@@ -99,7 +101,7 @@ h2.title {
 
 .btn {
     display: inline-block;
-    padding: 19px 35px;
+    padding: 17px 33px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
