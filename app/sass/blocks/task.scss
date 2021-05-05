@@ -1,0 +1,12 @@
+.task {
+    background-color: $porcelain;
+    &__inner {
+        padding: 50px 15px $big-offset;
+    }
+    &__title {
+        margin-bottom: 22px;
+    }
+    &__btn {
+        margin-top: 30px;
+    }
+}

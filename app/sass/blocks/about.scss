@@ -1,0 +1,41 @@
+.about {
+    &__inner {
+        display: flex;
+        padding: $big-offset 15px;
+    }
+    &__left {
+        max-width: calc(100% - 300px);
+    }
+    &__title {
+        margin-bottom: 22px;
+    }
+    &__text + &__text {
+        margin-top: 25px;
+    }
+    &__right {
+        margin-left: 30px;
+        width: 270px;
+        height: 270px;
+        background-color: $porcelain;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        margin-top: 60px;
+    }
+    &__round-text {
+        animation: rotate 12s infinite linear;
+    }
+    &__round-orbit {
+        position: absolute;
+        max-width: none;
+        top: 15px;
+        left: 20px;
+    }
+}
+
+@keyframes rotate {
+  from {transform: rotate(0)}
+  to {transform: rotate(360deg)}
+}
